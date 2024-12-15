@@ -1,0 +1,20 @@
+.header-content{
+    min-height: 85vh;
+    background: linear-gradient(rgba(59, 59, 109, 0.3), rgba(210, 66, 104, 0.5)), url("../../images/bg3.jpg") center/cover no-repeat;
+    flex-direction: column;
+}
+.header-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 5rem; /* Adjust font size for better visibility */
+    font-weight: bold;
+    text-align: center; /* Center the text */
+    color: white; /* Use a softer shade if needed, like #ff4d4d */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+    margin-bottom: 5px; /* Space between header and next element */
+  }
+.header-text{
+    margin-top: -1.8rem;
+    margin-bottom: 2.8rem;
+    opacity: 0.8;
+    max-width: 770px;
+}

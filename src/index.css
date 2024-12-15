@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --deep-purple-color: #6a0572;
+  --vibrant-pink-color: #bc1369;
+  --soft-grey-color: #f5f5f5;
+  --off-white-color: #fafafa;
+  --deep-black-color: #121212;
+  --muted-black-color: #444444;
+  --nice-black-color: #1a1a1a;
+  --smooth-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* More standard responsive approach */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--deep-black-color);
+  background-color: var(--off-white-color);
+}
+
+/* Resets with slight modifications */
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--deep-purple-color);
+  transition: color var(--smooth-transition);
+}
+
+a:hover {
+  color: var(--vibrant-pink-color);
+}
+
+button {
+  outline: 0;
+  border: none;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: opacity var(--smooth-transition);
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+input {
+  border: 1px solid rgba(0,0,0,0.1);
+  outline: 0;
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.resize-animation-stopper *{
+  animation: none!important;
+  transition: none!important;
+}
+
+/* Backgrounds with softer tones */
+.bg-pink { background-color: var(--vibrant-pink-color); }
+.bg-purple { background-color: var(--deep-purple-color); }
+.bg-white { background-color: var(--off-white-color); }
+.bg-dark {background-color: var(--nice-black-color); }
+
+/* Text with refined colors */
+.text-black { color: var(--deep-black-color); }
+.text-white { color: var(--off-white-color); }
+.text-purple { color: var(--deep-purple-color); }
+.text-light-black { color: var(--muted-black-color); }
+
+/* Typography utilities */
+.text-uppercase { text-transform: uppercase; }
+.text-center { text-align: center; }
+.text-capitalize { text-transform: capitalize; }
+.text-italic { font-style: italic; }
+
+/* Font weights remain the same */
+.fw-3 { font-weight: 300; }
+.fw-4 { font-weight: 400; }
+.fw-5 { font-weight: 500; }
+.fw-6 { font-weight: 600; }
+.fw-7 { font-weight: 700; }
+.fw-8 { font-weight: 800; }
+.fw-9 { font-weight: 900; }
+
+/* Font sizes */
+.fs-15 { font-size: 1.5rem; }
+.fs-16 { font-size: 1.6rem; }
+.fs-17 { font-size: 1.7rem; }
+.fs-18 { font-size: 1.8rem; }
+.fs-20 { font-size: 2rem; }
+.fs-22 { font-size: 2.2rem; }
+.fs-24 { font-size: 2.4rem; }
+.fs-26 { font-size: 2.6rem; }
+
+/* Letter spacing */
+.ls-1 { letter-spacing: 1px; }
+.ls-2 { letter-spacing: 2px; }
+
+/* Flexbox and Grid */
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Added gap for better spacing */
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-sb {
+  justify-content: space-between;
+}
+
+.flex-c {
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem; /* Added gap for grid layouts */
+}
+
+.container {
+  padding: 0 3rem; /* Slightly reduced padding */
+  width: 100%; /* Ensure full width */
+}
+
+/* Section title with subtle changes */
+.section-title h2 {
+  font-weight: 700; /* Slightly bolder */
+  text-transform: uppercase;
+  padding: 16px 0 20px 0;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: var(--deep-purple-color);
+}
