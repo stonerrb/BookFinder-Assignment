@@ -4,6 +4,8 @@ A React-based web application to help users search for books using the Open Libr
 
 For additional assistance, you can refer to [ChatGPT Help](https://chatgpt.com/share/675efbe5-aca8-8001-9417-94339865b67a). Claude was also used extensively in the development process.
 
+You can explore the live project and the code at [BookFinder on CodeSandbox](https://codesandbox.io/p/github/stonerrb/BookFinder-Assignment/main?import=true).
+
 ---
 
 ## Features
