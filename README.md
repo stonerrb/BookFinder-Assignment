@@ -1,6 +1,9 @@
 # BookFinder
 
 A React-based web application to help users search for books using the Open Library API. The app displays book details, including the author, publication year, and cover image. Users can easily find books by title and navigate through search results.
+
+For additional assistance, you can refer to [ChatGPT Help](https://chatgpt.com/share/675efbe5-aca8-8001-9417-94339865b67a). Claude was also used extensively in the development process.
+
 ---
 
 ## Features
